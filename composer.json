@@ -1,0 +1,26 @@
+{
+  "name": "quanghuy/first_package",
+  "description": "Description of the package",
+  "type": "library",
+  "require": {
+    "php": "^7.1 || ^8.1",
+    "illuminate/support": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "quanghuy\\first_package\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "quanghuy\\first_package\\ServiceProvider"
+      ],
+      "aliases": {
+        "PackageAlias": "quanghuy\\first_package\\Facades\\PackageAlias"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
